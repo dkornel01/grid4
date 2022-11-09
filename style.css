@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+}
+.menu ul{
+    grid-template-columns:  repeat(6,150px);
+    margin: 10px;
+    display: grid;
+    text-align: left;
+    list-style: none;
+    color: white;
+}
+#torzs{
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    max-width: 800px;
+    display: grid;
+    gap: 100px ;
+    margin: auto;
+}
+.paragrafusok_spec{
+    border-right: 5px red ridge;
+    border-left: 5px red ridge;
+}
+.minden{
+    background-color: black;
+    color: white;
+}
+
+
+h2{
+    text-align: center;
+}
+img{
+    width: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32pt;
+}
+.folyamatabra{
+    width: 400px;
+
+}
+.sor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: 1200px;
+    gap: 50px ;
+    margin: auto;
+}
+.keplet{
+    border-bottom: 1mm red ridge;
+}
+p{
+    text-align: justify;
+}
+
+.border{
+    border-bottom: red ridge 1mm;
+}
+.third{
+    width: 80%;
+    max-width: 900px;
+    gap: 50px ;
+    margin: auto;
+}
+.third p{
+    text-align: center;
+}
+.kepek{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    margin-left: 200px;
+    gap: 20px;
+    text-align: center;
+    
+}
+.kepek p{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .sor{ grid-template-columns: 1fr;
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .third{ grid-template-columns: 1fr;
+    }
+    .kepek{ grid-template-columns: 1fr;
+    }
+    #torzs{ grid-template-columns: 1fr;
+    }
+}
